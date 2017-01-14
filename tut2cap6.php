@@ -3,7 +3,7 @@
 <head>
 	<title></title>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script> 
-     <script type="text/javascript" src="controllercap5.js"></script>
+     <script type="text/javascript" src="controllercap6.js"></script>
 </head>
 <body ng-controller="FirstController"><!---controller define el controlador-->
 
@@ -22,6 +22,7 @@
 <h3>COmentarios</h3>
 
 <ul>
+<!--HTML JS-->
 	<li ng-repeat= "comentario in comentarios">
 		{{comentario.comentario}}
 

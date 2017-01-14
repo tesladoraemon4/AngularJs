@@ -14,11 +14,11 @@ var app = angular.module("MyFirstApp",[]);//NOmbre del modulo,
 */
 
 app.controller("FirstController",["$scope",function (s) {
-	$scope.nuevoComentario = {};
+	s.nuevoComentario = {};
 
-	$scope.nombre="david";
+	s.nombre="david";
 
-	$scope.comentarios = [
+	s.comentarios = [
 		{
 			comentario:"Comentarios c",
 			username:"David"
@@ -31,9 +31,9 @@ app.controller("FirstController",["$scope",function (s) {
 	];
 
 
-	$scope.agregarComentario = function () {
-		$scope.comentarios.push($scope.nuevoComentario);
-		$scope.nuevoComentario ={};
+	s.agregarComentario = function () {
+		s.comentarios.push(s.nuevoComentario);
+		s.nuevoComentario ={};
 	}
 
 }])
@@ -47,12 +47,12 @@ app.controller("FirstController",["$scope",function (s) {
 /*  otra forma 
 
 	angular.module("MyFirstApp",["ngResourse",""])
-	.controller("FirstController",function ($scope) {
+	.controller("FirstController",function (s) {
 	//el objeto scope enlaza la informacion del driver con la vista 
-		$scope.nombre="david";
-	}).controller("TridController",function ($scope) {
+		s.nombre="david";
+	}).controller("TridController",function (s) {
 	//el objeto scope enlaza la informacion del driver con la vista 
-		$scope.nombre="david";
+		s.nombre="david";
 	});
 
 */

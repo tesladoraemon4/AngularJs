@@ -5,7 +5,8 @@ angular.module("MyFirstApp",[])
 
 	/*
 	watcher escucha los eventos de cada elemento 
-	$digest actualiza los atributos de los elementos
+	$digest actualiza los atributos de los elementos yt revisa si hay 
+	cambios en cada elemento 
 	*/
 
 	$scope.nombre ="david";

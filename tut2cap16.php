@@ -17,6 +17,9 @@
 </head>
 <body ><!---controller define el controlador-->
 
+
+
+
 <button class="hover" ng-class ="{'hover': bandera, 'no-hover':!bandera}" ng-click="bandera= !bandera">
 	evento	
 </button>

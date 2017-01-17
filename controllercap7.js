@@ -7,7 +7,7 @@ angular.module("MyFirstApp",[])
  		success(function (data) {//cuando la peticion es exitosa
  			$scope.posts = data;
  		}).error(function(error){//cuando hay error 
-
+ 			console.log(error);
  		});
 
 

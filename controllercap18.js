@@ -5,11 +5,11 @@ angular.module("CustomDirective",[])
 
 
 			//elem.atributo({JSON})
-elem.css({"background":"url("+paramDirective+")",
-	"background-position": "center",
-	"background-size": "cover"});
+		elem.css({"background":"url("+paramDirective+")",
+			"background-position": "center",
+			"background-size": "cover"});
 
-		});
+				});
 
 
 	}

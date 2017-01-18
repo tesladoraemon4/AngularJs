@@ -1,12 +1,12 @@
 angular.module("CustomDirective",[])
 .directive("myAutocomplete",function () {
-	// se  va a comunicar jquery con angular
-	function link(scope,elem,atrib) {
+	// se  va a comunicar jquery con angular y se hace la manupulacion del doom
+	function link(scope,element,attrs) {
 
 		//como se importo jquery es posible usarlo en el proyecto
 		//$(obj jquery).metodo({JSON})
-		$(elem).autocomplete({
-			source:scope.$eval(atrib.myAutocomplete/*saco repost del controller*/),
+		$(element).autocomplete({
+			source:scope.$eval(attrs.myAutocomplete/*saco repost del controller*/),
 			select:function (ev,ui) {//cuando seleccionamos algun elemento de la lista
 				ev.preventDefault();
 				if(ui.item){
@@ -16,6 +16,7 @@ angular.module("CustomDirective",[])
 
 			},
 			focus:function (ev,ui) {
+
 				ev.preventDefault();
 				$(this).val(ui.item.label);
 
@@ -25,7 +26,7 @@ angular.module("CustomDirective",[])
 
 
 	return {
-		link : link
+		link : link//link: nompuncion
 	};
 
 })
@@ -45,10 +46,10 @@ elem.css({"background":"url("+paramDirective+")",
 	}
 })
 .controller("AppCtrl",function ($scope,$http) {
-
+	$scope.repos = [];//variable donde se guardan los nombres de la peticion
 	$http.get("https://api.github.com/users/codigofacilito/repos").
 	success(function (data) {
-		$scope.repos = data;
+		$scope.posts = data;
 		for (var i = data.length - 1; i >= 0; i--) {
 			var repo = data[i];
 			$scope.repos.push(repo.name);

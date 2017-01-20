@@ -16,7 +16,6 @@ app.controller("FirstController",function ($scope) {
 			comentario:"Comentarios x",
 			username:"David 12343"
 		}
-asdfjklñjsadkflñjasdf
 
 	];
 

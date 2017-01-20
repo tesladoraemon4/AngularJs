@@ -19,7 +19,7 @@
 
 
 
-<h3>COmentarios</h3>
+<h3>Comentarios</h3>
 
 <ul>
 <!--HTML JS-->

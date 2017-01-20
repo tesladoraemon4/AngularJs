@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--hacer ruting-->
+<html  ng-app="CustomDirective">
+<head>
+	<title></title>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script> 
+     <script src="https://code.angularjs.org/1.4.0/angular-route.js"></script>
+
+
+     
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+     <link rel="stylesheet" type="text/css" href="autocomplete-jquery-ui.structure.css">
+     <script type="text/javascript" src="autocomplete-jquery-ui.js"></script>
+
+
+
+     <script type="text/javascript" src="app.js"></script>
+     <script type="text/javascript" src="controllers20.js"></script>
+
+     <script type="text/javascript" src="directives20.js"></script>
+
+
+     <style type="text/css">
+          .circular{
+               border-radius: 50%;
+               width: 100px;
+               height: 100px;
+               display: inline-block;
+          }
+          .no-list li {
+               list-style-type: none;
+               background-color: green;
+          }
+          body,html{
+               text-align: center;
+               background-color: red;
+               margin: 0px; 
+
+          }
+
+
+     </style>
+
+
+</head>
+<body><!---controller define el controlador-->
+
+     <div ng-view>
+     </div>
+
+
+
+</body>
+</html>
+<!--
+	style="
+	background:url({{repo.owner.avatar_url}});
+	background-position: center;
+	background-size: cover; 
+	"
+-->

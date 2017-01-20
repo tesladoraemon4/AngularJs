@@ -1,0 +1,17 @@
+
+<input type="text" my-autocomplete="repos" placeholder="buscar repositorio">
+
+<ul class="no-list" ng-cloak><!--ver una plantilla antes de que cargue -->
+          <li ng-repeat="repo in posts" ng-hide="main_repo && main_repo!=repo.name">
+              <a href="#/repo/{{repo.name}}">
+
+               		<h1 class="inline-block">{{repo.full_name}}</h1>
+               </a>
+
+               <div class="circular" 
+               img-circle ="{{repo.owner.avatar_url}}"
+            ></div>
+
+
+          </li>
+     </ul>

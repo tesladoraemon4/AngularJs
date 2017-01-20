@@ -3,7 +3,7 @@
 <head>
 	<title>PRimera pagina con angular</title>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script> 
-     <script type="text/javascript" src="controllercap14.js"></script>
+     <script type="text/javascript" src="controllercap15.js"></script>
      <script type="text/javascript" src="angular-local-storage.min.js"></script>
 </head>
 	<body ng-controller="hacerControlador"><!---controller define el controlador-->
